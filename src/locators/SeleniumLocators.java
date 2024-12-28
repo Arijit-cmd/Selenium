@@ -20,17 +20,16 @@ class SeleniumLocators {
 		driver.manage().window().maximize();
 	}
 
-	@Disabled
 	@Test
 	void idnameclassnamecssselector() throws InterruptedException {
 		driver.get("https://www.techlearn.in/admin");
 		driver.findElement(By.id("user_login")).sendKeys("Arijit");
 		driver.findElement(By.name("pwd")).sendKeys("ABC");
 		driver.findElement(By.id("rememberme")).click();
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		driver.findElement(By.className("wp-login-lost-password")).click();
 
-		driver.findElement(By.cssSelector("input#user_login")).sendKeys("arijith123@gmail.com");
+		driver.findElement(By.cssSelector("input#user_login")).sendKeys("royarijit800@gmail.com");
 		driver.findElement(By.cssSelector("#wp-submit")).click();
 
 		driver.findElement(By.cssSelector("a.wp-login-log-in")).click();
