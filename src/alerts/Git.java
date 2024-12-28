@@ -1,14 +1,22 @@
 package alerts;
 
-import org.testng.annotations.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 public class Git {
-  @Test
-  public void f() {
-  }
-  @BeforeTest
-  public void beforeTest() {
-  }
+	WebDriver driver;
+
+	@Test
+	public void demo() {
+		
+}
+
+	@BeforeTest
+	public void beforeTest() {
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+	}
 
 }
