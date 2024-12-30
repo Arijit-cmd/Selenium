@@ -29,7 +29,7 @@ public class TestNG_7_InvocationCount {
 		driver.findElement(By.xpath("//span[@class='KTBKoe']")).click();
 	}
 
-	@Test(invocationCount = 3)
+	@Test(invocationCount = 10)
 	public void method2() {
 		driver.get("https://www.google.com");
 		driver.findElement(By.name("q")).sendKeys("Selenium");
