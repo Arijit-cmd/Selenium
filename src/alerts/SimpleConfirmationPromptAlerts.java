@@ -14,9 +14,9 @@ public class SimpleConfirmationPromptAlerts {
 	// Simple Alert omly ok button
 	public void alertokbutton() throws InterruptedException {
 		driver.get("https://www.techlearn.in/code/confirmation-dialog-box/");
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		driver.findElement(By.xpath("//button[@onclick='myFunction()']")).click();
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		driver.switchTo().alert().accept();
 
 	}
